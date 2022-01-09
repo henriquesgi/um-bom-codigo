@@ -6,6 +6,8 @@ Sempre escreva um código pensando em seus leitores, em outras palavras, **crie 
 
 Recomendo que você leia algum Clean Code, e de preferência para a linguagem de programação que você mais se identifica, no meu caso o [JavaScript Clean Code](https://github.com/ryanmcdermott/clean-code-javascript) ou o [TypeScript Clean Code](https://github.com/labs42io/clean-code-typescript), recomendo também que conheça os princípios [SOLID](https://en.wikipedia.org/wiki/SOLID) assim como os [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern).
 
+Busque utilizar ferramentas como o [ESLint](https://eslint.org/) e o [Prettier](https://prettier.io/) para verificar problemas e manter padrões de formatação do código.
+
 Saiba também que existem processos que visam assegurar a qualidade, como o [Code Review](https://en.wikipedia.org/wiki/Code_review), e é de grande importância o seu uso, afinal, tais processos têm como objetivo manter os padrões estipulados e amenizar problemas que podem passar despercebidos durante o desenvolvimento.  
 
 ### O que você deve saber antes de começar a programar?
@@ -152,3 +154,5 @@ function buscarUsuario(id) {			// bom
 	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única do usuário
 }
 ```
+
+:octocat: Ajude a melhorar esse projeto.
