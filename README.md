@@ -12,7 +12,7 @@ Saiba também que existem processos que visam assegurar a qualidade, como o [Cod
 Estude inglês, isso é imprescindível.  
 Aprenda a pesquisar.  
 Um desenvolvedor irá estudar desde o momento em que escolheu a sua profissão até o final de sua vida.  
-É interessante aperfeisoe-se em uma linguagem, acompanhando atualizações e guias como [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices). Mas isso não significa que você deve saber apenas uma linguagem, a pergunta que você deve ter em mente é:  
+É interessante aperfeiçoar-se em uma linguagem, acompanhando atualizações e guias como [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices). Mas isso não significa que você deve saber apenas uma linguagem, a pergunta que você deve ter em mente é:  
 > "Qual irá permitir a minha evolução profissional?  
 > Conhecer diversas linguagens superficialmente e não ser especialista em nada ou conhecer muito uma determinada linguagem me tornando um especialista?"  
 
@@ -35,7 +35,6 @@ function calcularArea() {...}   // bom
 
 var collectionUsuario = [...]   // ruim
 var colecaoUsuario = [...]      // bom
-var usuarios = [...]            // Essa é a melhor escolha, um nome no plural indica que você pode ter mais de um usuário
 ```
 
 ### Escolha uma convenção para nomes
@@ -52,10 +51,10 @@ var IDUsuario = 001       // ruim
 var ID_usuario = 001      // ruim
 var IdUsuario = 001       // ruim
 var idUsuario = 001       // bom
-// Não interessa se a palavra é uma abreviação de algo ou tem duas letras maiúsculas, como ID, respeite o padrão escolhido
+// Não interessa se a palavra é uma abreviação ou algo como ID, respeite o padrão escolhido
 ```
 
-Conforme já mencionado, não existe uma regra ou padrão que se encaixará perfeitamente em todos os cenários:
+Conforme já mencionado, não existe uma regra ou padrão que se encaixe perfeitamente em todos os cenários:
 
 ```JavaScript
 // Imagine uma função que receba um usuario como parâmetro e necessite de uma variável com o nome usuário
@@ -107,14 +106,14 @@ dados.forEach((dado) => {
 var frutas = ['limão', 'laranja', 'melancia']                // bom
 frutas.forEach((fruta) => {
   // A correta abstração permite um tratamento adequado juntamente com um único comportamento
-  // A correta nomemclatura do vetor e do elemento de iteração criam um código de boa legibilidade
+  // A correta nomenclatura do vetor e do ponteiro criam um código de boa legibilidade
 })
 ```
 
 ### Funções
 Uma função deve ser capaz de realizar apenas uma ação, e isso é extremamente importante leia sobre SOLID.  
 O nome de uma função deve indicar o que ela faz.  
-Ao escrever o seu código em português, uma boa sugestão para nomear funções é utilizar verbos no infinitivo, indicando ue uma ação será feita.  
+Ao escrever o seu código em português, uma boa sugestão para nomear funções é utilizar verbos no infinitivo, indicando que uma ação será feita.  
 Quando uma função espera receber X, o seu parâmetro deve-se chamar X e não algo aleatório.  
 
 ```JavaScript
@@ -132,9 +131,8 @@ function calcularArea(base, altura) {
 	return area
 }
 
-// Suponha que seja necessário inserir 10 validações para a área, no exemplo acima o código poderá começará a ficar complicado não é?
 // Agora repare que são utilizadas duas funções com responsabilidades únicas
-// A função de validação sabe apenas o necessário para o seu funcionamento e nada além disso
+// "validarTamanhoArea" sabe apenas o que ela deve fazer e nada além disso
 function calcularArea(base, altura) {
 	return base * altura
 }
@@ -154,14 +152,3 @@ function buscarUsuario(id) {			// bom
 	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única do usuário
 }
 ```
-
-
-
-
-" ou ' dentro de templatestrings
-
-espaços depois de blocos de código
-
-leia o código e entenda
-
-pesquise antes de ir de acordo com sua intuição
