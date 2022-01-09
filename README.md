@@ -15,28 +15,27 @@ Estude inglês, isso é imprescindível.
 Aprenda a pesquisar.  
 Um desenvolvedor irá estudar desde o momento em que escolheu a sua profissão até o final de sua vida.  
 É interessante aperfeiçoar-se em uma linguagem, acompanhando atualizações e guias como [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices). Mas isso não significa que você deve saber apenas uma linguagem, a pergunta que você deve ter em mente é:  
-> "Qual irá permitir a minha evolução profissional?  
-> Conhecer diversas linguagens superficialmente e não ser especialista em nada ou conhecer muito uma determinada linguagem me tornando um especialista?"  
+> O que irá permitir a minha evolução profissional?  
+> Conhecer diversas linguagens superficialmente e não ser especialista em nada ou conhecer muito uma determinada linguagem me tornando um especialista?  
 
 ### Qual idioma usar?
-O recomendado é criar códigos em inglês, porém, caso o seu produto tenha muitos termos sem tradução ou sem uma tradução adequada ou até mesmo se a sua equipe não tem um nível de inglês satisfatório, prefira criar um código inteiramente em português.  
-**EVITE MISTURAR IDIOMAS NO CÓDIGO**, isso irá dificultar o entendimento do seu código e confundir os leitores.  
+O recomendado é criar códigos em inglês, porém, caso o seu produto tenha muitos termos sem tradução, sem uma tradução adequada ou até mesmo se a sua equipe não tem um nível de inglês satisfatório, prefira criar um código inteiramente em português.  
+**EVITE MISTURAR IDIOMAS NO CÓDIGO**, isso irá dificultar o entendimento e causar confusões.  
 
-É óbvio que você não será capaz de traduzir métodos, funções, classes e termos específicos de uma linguagem de programação ou de bibliotecas de terceiros, logo, ao optar pelo português em seu código, é interessante manter em português tudo criado por você, ou seja, mantenha em português as regras de negócio, utilitários, entidades, classes, métodos, variáveis e entidades, por exemplo.
+É óbvio que você não será capaz de traduzir métodos, funções, classes e termos específicos de uma linguagem de programação ou de bibliotecas de terceiros, logo, ao optar pelo português em seu código, é interessante manter em português tudo criado por você, ou seja, mantenha em português as regras de negócio, utilitários, entidades, classes, métodos, variáveis, por exemplo.
 
 Não existe um modelo de código perfeito, livre de dúvidas ou sem discussões, sempre existirão dúvidas envolvendo pequenos detalhes não abordados em praticamente nenhum guia.  
-O objetivo é deixar claro que você deve planejar e padronizar o que deverá ser feito.
 
 ```JavaScript
 // Código usando o português
-var user                        // ruim
-var usuario                     // bom
+const user                        	// ruim
+const usuario                    	// bom
 
-function calculateArea() {...}  // ruim
-function calcularArea() {...}   // bom
+function calculateArea() {...}		// ruim
+function calcularArea() {...}   	// bom
 
-var collectionUsuario = [...]   // ruim
-var colecaoUsuario = [...]      // bom
+const collectionUsuario = [...]   	// ruim
+const colecaoUsuario = [...]     	 // bom
 ```
 
 ### Escolha uma convenção para nomes
@@ -44,15 +43,15 @@ Escolha uma [Naming convention](https://en.wikipedia.org/wiki/Naming_convention_
 
 ```JavaScript
 // Usando o lower camel case:
-var nomemenino = 'Pedro'  // ruim
-var nome_menino = 'Pedro' // ruim
-var NomeMenino = 'Pedro'  // ruim
-var nomeMenino = 'Pedro'  // bom
+const nomemenino = 'Pedro'  // ruim
+const nome_menino = 'Pedro' // ruim
+const NomeMenino = 'Pedro'  // ruim
+const nomeMenino = 'Pedro'  // bom
 
-var IDUsuario = 001       // ruim
-var ID_usuario = 001      // ruim
-var IdUsuario = 001       // ruim
-var idUsuario = 001       // bom
+const IDUsuario = 001       // ruim
+const ID_usuario = 001      // ruim
+const IdUsuario = 001       // ruim
+const idUsuario = 001       // bom
 // Não interessa se a palavra é uma abreviação ou algo como ID, respeite o padrão escolhido
 ```
 
@@ -62,7 +61,7 @@ Conforme já mencionado, não existe uma regra ou padrão que se encaixe perfeit
 // Imagine uma função que receba um usuario como parâmetro e necessite de uma variável com o nome usuário
 // Nesse caso, pode ser utilizado algo como "_usuario", desrespeitando a convenção de nomes
 function atualizarUsuario(usuario) {
-  var _usuario = db.usuarios.update({
+  const _usuario = db.usuarios.update({
     { id: usuario.id },
     { $set: { nome: usuario.nome } },
   })
@@ -82,11 +81,11 @@ Ao criar uma variável tenha em mente "o que essa variável armazena?".
 Não use números mágicos.  
 
 ```JavaScript
-var valores = { nome: 'Rodrigo' }	// ruim
-var pessoa = { nome: 'Rodrigo' } 	// bom
+const valores = { nome: 'Rodrigo' }	// ruim
+const pessoa = { nome: 'Rodrigo' } 	// bom
 
-var n = 'Silvio'                  	// ruim
-var nome = 'Silvio'               	// bom
+const n = 'Silvio'                  	// ruim
+const nome = 'Silvio'               	// bom
 
 if (velocidadeMedida > 60) {...}	// ruim
 					// O que significa 60?
@@ -113,10 +112,10 @@ frutas.forEach((fruta) => {
 ```
 
 ### Funções
-Uma função deve ser capaz de realizar apenas uma ação, e isso é extremamente importante leia sobre SOLID.  
+Uma função deve ser capaz de realizar apenas uma ação, e isso é extremamente importante.  
 O nome de uma função deve indicar o que ela faz.  
 Ao escrever o seu código em português, uma boa sugestão para nomear funções é utilizar verbos no infinitivo, indicando que uma ação será feita.  
-Quando uma função espera receber X, o seu parâmetro deve-se chamar X e não algo aleatório.  
+Quando uma função espera receber X, o seu parâmetro deve-se chamar X e não algo aleatório e sem relação.  
 
 ```JavaScript
 function calculoArea() {...}		// ruim
@@ -125,7 +124,7 @@ function calcularArea() {...}		// bom
 
 // A função não calcula apenas a área, ela tem outras responsabilidades
 function calcularArea(base, altura) {
-	var area = base * altura	
+	const area = base * altura	
 	
 	if (area > 100) {
 		return 'Erro!'
@@ -147,12 +146,13 @@ function validarTamanhoArea(area, limite = process.env.limite) {
 }
 
 function buscarUsuario(data) {			// ruim
-	const usuario = db.usuarios.get(data)	// "data" representa qual atributo na entidade referente ao usuário?
+	const usuario = db.usuarios.get(data)	// O que "data" representa na entidade de usuários?
 }
 
 function buscarUsuario(id) {			// bom
-	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única do usuário
+	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única
 }
 ```
 
-:octocat: Ajude a melhorar esse projeto.
+
+:octocat: Contribua e ajude a melhorar esse guia.
