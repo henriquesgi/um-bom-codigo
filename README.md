@@ -8,15 +8,9 @@ Recomendo que você leia algum Clean Code, e de preferência para a linguagem de
 
 Busque utilizar ferramentas como o [ESLint](https://eslint.org/) e o [Prettier](https://prettier.io/) para verificar problemas e manter padrões de formatação do código.
 
-Saiba também que existem processos que visam assegurar a qualidade, como o [Code Review](https://en.wikipedia.org/wiki/Code_review), e é de grande importância o seu uso, afinal, tais processos têm como objetivo manter os padrões estipulados e amenizar problemas que podem passar despercebidos durante o desenvolvimento.  
+Acompanhar novidades, atualizações e artigos como [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices) é essencial para melhorar o nível dos seus códigos. Quanto mais conhecimento, melhor.  
 
-### O que você deve saber antes de começar a programar?
-Estude inglês, isso é imprescindível.  
-Aprenda a pesquisar.  
-Um desenvolvedor irá estudar desde o momento em que escolheu a sua profissão até o final de sua vida.  
-É interessante aperfeiçoar-se em uma linguagem, acompanhando atualizações e guias como [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices). Mas isso não significa que você deve saber apenas uma linguagem, a pergunta que você deve ter em mente é:  
-> O que irá permitir a minha evolução profissional?  
-> Conhecer diversas linguagens superficialmente e não ser especialista em nada ou conhecer muito uma determinada linguagem me tornando um especialista?  
+Saiba também que existem processos que visam assegurar a qualidade, como o [Code Review](https://en.wikipedia.org/wiki/Code_review), e é de grande importância o seu uso, afinal, tais processos têm como objetivo manter os padrões estipulados e amenizar problemas que podem passar despercebidos durante o desenvolvimento.  
 
 ### Qual idioma usar?
 O recomendado é criar códigos em inglês, porém, caso o seu produto tenha muitos termos sem tradução, sem uma tradução adequada ou até mesmo se a sua equipe não tem um nível de inglês satisfatório, prefira criar um código inteiramente em português.  
