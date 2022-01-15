@@ -147,6 +147,3 @@ function buscarUsuario(id) {			// bom
 	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única
 }
 ```
-
-
-:octocat: Contribua e ajude a melhorar esse guia.
