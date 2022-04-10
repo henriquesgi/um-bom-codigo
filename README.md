@@ -147,3 +147,38 @@ function buscarUsuario(id) {			// bom
 	const usuario = db.usuarios.get(id)	// Sabe-se que a busca será feita pela chave única
 }
 ```
+
+### Excesso de funções
+Responda a seguinte pergunta antes de ir para a próxima linha: Você sabe o que é uma função?  
+Considerando o contexto desse artigo e de acordo com a [Wikipedia](https://en.wikipedia.org/wiki/Subroutine), uma função tem como principais objetivos: criar subrotinas para reduzir complexidade, reduzir códigos que seriam duplicados, dividir um programa em "etapas" de execução, melhorar a legibilidade do código...  
+Mas por que mostrar o óbvio?  
+Porque existem programadores que utilizam funções em absolutamente todo o código, fazendo com que o leitor fique "pulando" linhas a todo instante.
+
+```JavaScript
+function retornaData() {
+	return new Date()
+}
+
+const informacoesFuncionario = {
+	nome: 'João',
+	// Por não ser uma biblioteca de terceiro é provável que o leitor pare e analize o que a função faz
+	hora: retornaData()
+}
+
+fecharPonto(informacoesFuncionario)
+```
+
+A função acima não recebe parâmetros e também não realiza operações, será que ela é útil?
+
+Repare que no seguinte exemplo a leitura é sem interrupções e não causa a perda de foco do leitor:
+
+```JavaScript
+const informacoesFuncionario = {
+	nome: 'João',
+	hora: new Date()
+}
+
+fecharPonto(informacoesFuncionario)
+```
+
+Use funções de forma sábia, sempre faça com que elas melhorem o código.
