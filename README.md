@@ -155,14 +155,14 @@ Mas por que mostrar o óbvio?
 Porque existem programadores que utilizam funções em absolutamente todo o código, fazendo com que o leitor fique "pulando" linhas a todo instante.
 
 ```JavaScript
-function retornaData() {
+function retornarData() {
 	return new Date()
 }
 
 const informacoesFuncionario = {
 	nome: 'João',
 	// Por não ser uma biblioteca de terceiro é provável que o leitor pare e analize o que a função faz
-	hora: retornaData()
+	hora: retornarData()
 }
 
 fecharPonto(informacoesFuncionario)
