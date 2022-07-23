@@ -29,7 +29,7 @@ function calculateArea() {...}		// ruim
 function calcularArea() {...}   	// bom
 
 const collectionUsuario = [...]   	// ruim
-const colecaoUsuario = [...]     	 // bom
+const colecaoUsuario = [...]     	// bom
 ```
 
 ### Escolha uma convenção para nomes
